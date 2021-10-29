@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>Hello Golang</title>
+    </head>
+    <body>
+        <h1>{{.s1}}</h1> <!-- 将后端穿过来的. 调用后端解析模板文件之前自定义的函数safe -->
+        <h1>{{.s2|safe}}</h1> <!-- 将后端穿过来的. 调用后端解析模板文件之前自定义的函数safe -->
+    </body>
+</html>

@@ -1,0 +1,9 @@
+<html lang="en">
+    <body>
+        index页面:<br>
+        <!--块动作 定义默认模板  先根据block后面的模板名去找要找的模板页面 如果找不到就显示block下面的页面 即是个默认模板-->
+        {{block "my" .}}
+            默认模板页面：my页面找不到了
+        {{end}}
+    </body>
+</html>

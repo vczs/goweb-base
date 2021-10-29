@@ -1,0 +1,12 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>index1</title>
+    </head>
+    <body>
+    index1：<br>
+    {{.}}<br><br><br><!--这里显示m.Execute()传递过来的内容-->
+    <!--index1.html给index2.html传递信息 并在这显示给index2.html传递信息后页面的内容-->
+    {{template "index2.html" "(传递给index2.html的信息)"}}
+    </body>
+</html>

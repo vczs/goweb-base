@@ -1,0 +1,19 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>index1</title>
+    </head>
+    <body>
+       <!--这里显示m.Execute()函数第二个参数的内容-->
+        {{if .}}
+            m.Execute()函数传递过来true 所以我会显示出来
+        {{end}}
+    <hr/>
+       <!--这里显示m.Execute()函数第二个参数的内容-->
+       {{if .}}
+           m.Execute()函数传递过来true 所以我会显示出来
+           {{else}}
+           m.Execute()函数传递过来false 所以我会显示出来
+       {{end}}
+    </body>
+</html>

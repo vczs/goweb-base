@@ -1,0 +1,11 @@
+package session
+/**
+session是cookie的更安全的使用
+
+cookie是将用户信息保存在客户端 客户端每次向服务端发送请求时要将保存自己信息的cookie发送给服务端
+让服务端通过存有自己信息的cookie认证身份 这样很不安全
+
+session是将用户信息存储在服务端 客户端在第一次向服务端发送请求时创建一个session 给他一个ID
+这样客户端下次发送请求时 只需通过cookie发送自己的ID即可完成认证 cookie的value就是session的ID
+不再需要每次发送自己的用户信息
+*/

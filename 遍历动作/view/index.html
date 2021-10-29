@@ -1,0 +1,18 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>index1</title>
+    </head>
+    <body>
+    <hr/>
+       <!--这里遍历显示m.Execute()函数第二个参数的内容-->
+       {{range .}}
+           遍历到的元素：
+           {{.}}
+           <a href="#">{{.Name}}</a>
+           <br>
+       {{else}}
+           没有元素
+       {{end}}
+    </body>
+</html>

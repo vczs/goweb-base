@@ -1,0 +1,19 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>index1</title>
+    </head>
+    <body>
+    <hr/>
+       <!--这里设置m.Execute()传递过来的内容-->
+       {{with "太子"}}
+           修改后的内容：{{.}}
+        {{end}}
+           <hr/>
+       {{with ""}}
+           修改后的内容：{{.}}
+       {{else}}
+           传递过来的内容：{{.}}
+       {{end}}
+    </body>
+</html>
